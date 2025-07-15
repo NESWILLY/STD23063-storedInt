@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class StoredIntController {
-  private static final String FILE_PATH = "stored-int.txt";
+  private static final String FILE_PATH = "/tmp/stored-int.txt";
 
   @GetMapping("/stored-int")
   public String getStoredInt() throws IOException {
